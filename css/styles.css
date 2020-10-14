@@ -587,3 +587,44 @@ body {
   transform: scale(0) rotate(720deg);
   transition: all 250ms linear 0ms;
 }
+
+.form {
+  padding: 40px;
+  outline: 1px solid tomato;
+}
+
+.form-title {
+  font-family: var(--main-font);
+  color: var(--title-color);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-label {
+  margin-bottom: 4px;
+}
+
+/*.policy-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}*/
+
+.policy-title {
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
