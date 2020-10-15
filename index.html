@@ -453,25 +453,34 @@
             <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>                        
               <label class="form-field">
                 <span class="form-label">Имя</span>
-                <input type="text" name="name" id="name" required minlength="2">
+                <span class="modal-svg"><svg>
+                  <use href="./images/modal_icons.svg#icon-person"></use>
+                </svg></span>
+                  <input class="input" type="text" name="name" id="name" required minlength="2">
               </label>           
               <label class="form-field">
                 <span class="form-label">Телефон</span>
-                <input type="tel" name="tel" id="tel" required pattern="[0-9]{3}-[0">
+                <span class="modal-svg"><svg>
+                  <use href="./images/modal_icons.svg#icon-phone"></use>
+                </svg></span>            
+                <input type="tel" name="tel" id="tel" class="input" required>
               </label>            
               <label class="form-field">
                 <span class="form-label">Почта</span>
-                <input type="email" name="email" id="email" required>
+                <span class="modal-svg"><svg>
+                  <use href="./images/modal_icons.svg#icon-email"></use>
+                </svg></span>
+                <input type="email" name="email" id="email" class="input" required>
               </label>            
-              <label class="form-field">
+              <label class="form-field-comment">
                 <span class="form-label">Комментарий</span>
-                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                <textarea name="comment" id="comment" cols="30" rows="10" class="input" placeholder="Введите текст"></textarea>
               </label>
               <div class="policy-box">            
-                <input type="checkbox" name="policy" id="policy">
-                <label for="policy" class="policy-title">Соглашаюсь с рассылкой и принимаю Условия договора</label>              
+                <input class="checkbox" type="checkbox" name="policy" id="policy">
+                <label for="policy" class="policy-title">Соглашаюсь с рассылкой и принимаю <a style="color: #2196f3;" href="*">Условия договора</a></label>              
               </div>
-              <button type="submit">Отправить</button>
+              <button class="submit-btn" type="submit">Отправить</button>
           </form>
           <button type="button" class="close-btn" data-modal-close>
             <svg width="11px" height="11px">
