@@ -336,6 +336,7 @@ body {
 
 .footer-links {
   width: 206px;
+  margin-right: 93px;
 }
 .footer-features-title {
   font-weight: 700;
@@ -371,4 +372,58 @@ body {
   width: 20px;
   height: 20px;
   fill: var(--white-dark-theme);
+}
+
+.footer-sign {
+  width: 572px;
+}
+
+.footer-form {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.footer-form-input {
+  width: 358px;
+  height: 48px;
+  background-color: var(--background-color);
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.footer-form-input::placeholder {
+  padding-left: 16px;
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+}
+
+.footer-btn {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  height: 50px;
+  min-width: 200px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-btn-svg {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
 }
