@@ -94,8 +94,9 @@ body {
   position: relative;
 }
 
-.header .address {
+.header-address {
   margin-left: auto;
+  display: flex;
 }
 
 .navigation-list-link {
@@ -119,6 +120,8 @@ body {
 }
 
 .header-contacts {
+  display: flex;
+  align-items: center;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
@@ -130,34 +133,22 @@ body {
 }
 
 .header-contacts:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .header {
   border: 1px solid #ececec;
 }
 
-.header-contacts-list {
-  display: flex;
-  align-items: center;
-}
-
-.mail {
-  margin-right: 30px;
-}
-
-.mail:hover,
-.phone:hover {
-  color: var(--accent-color);
-}
 .icon {
+  align-items: center;
   margin-right: 10px;
   fill: #757575;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mail:hover .icon,
-.phone:hover .icon {
+.header-contacts:hover .icon,
+.header-contacts:hover .icon {
   fill: var(--accent-color);
 }
 
@@ -388,7 +379,7 @@ body {
   width: 358px;
   height: 48px;
   background-color: var(--background-color);
-  border: 1px solid #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   margin-right: 12px;
   padding-left: 16px;
